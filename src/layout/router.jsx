@@ -11,7 +11,7 @@ const Router = () => (
 		<Route path="/cbb" />
 		<Route path="/nba" />
 		<Route path="/other" />
-		<Route path="/article/:id" />
+		<Route path="/article/:slug" />
 		<Route component={NoMatch} />
 	</Switch>
 );
