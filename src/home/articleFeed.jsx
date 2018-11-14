@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Article from './article';
+import ArticleItem from './ArticleItem';
 
 const ArticleFeed = ({ articles }) => {
 	return (
@@ -9,10 +9,12 @@ const ArticleFeed = ({ articles }) => {
 			{
 				articles ?
 					articles.map((article => (
-						<Article info={article} />
+						<ArticleItem
+							{...article.fields}
+							key={article.fields.slug} />
 					)))
 					:
-					'howdy'
+					'loading...'
 			}
 		</div>
 	);
