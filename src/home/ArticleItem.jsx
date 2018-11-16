@@ -7,13 +7,11 @@ import './ArticleItem.scss';
 const Article = ({ preview, title, author, date, slug, topic }) => {
 
 	return (
-		<article
-			className="media"
-		>
+		<article className="media">
 			<figure className="media-left">
-				<p className="image thumbnail">
+				<p className="thumbnail image">
 					<Link to={`/article/${slug}`}>
-						<img src={preview.fields.file.url} alt={title} className="thumbnail-image" />
+						<img src={preview.fields.file.url} alt={title} className="thumbnail-img" />
 					</Link>
 				</p>
 			</figure>

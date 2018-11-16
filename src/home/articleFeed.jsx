@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
 import ArticleItem from './ArticleItem';
 
 const ArticleFeed = ({ articles }) => {
 	return (
-		<div className="column is-two-thirds">
-			<h1 className="title">Latest</h1>
+		<Fragment>
+			<h2 className="title is-3 is-uppercase">Latest</h2>
 			{
 				articles ?
 					articles.map((article => (
@@ -16,7 +16,7 @@ const ArticleFeed = ({ articles }) => {
 					:
 					'loading...'
 			}
-		</div>
+		</Fragment>
 	);
 }
 
