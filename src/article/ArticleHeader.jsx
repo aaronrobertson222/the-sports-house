@@ -21,7 +21,11 @@ const ArticleHeader = ({ articleTitle, category, author, publishedDate, image })
 			<div className="level">
 				<div className="level-left">
 					<h2 className="subtitle is-5 published-line">
-						By&nbsp;<span className="published-line-item">{author}</span>
+						By&nbsp;
+						<span
+							className="published-line-item">
+							{author}
+						</span>
 						<span
 							className="published-line-item">
 							{moment(publishedDate).format('MMMM DD, YYYY')}

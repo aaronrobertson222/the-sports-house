@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import * as contentful from "contentful";
 
-function useFetchContent(opts, match = []) {
-	
+function useFetchArticles(opts, topic = []) {
+  
   const [posts, setPosts] = useState(null);
   let client = contentful.createClient({
     space: '2iv1kkxpi49n',
@@ -10,9 +10,12 @@ function useFetchContent(opts, match = []) {
   });
 
   useEffect(() => {
-    client.getEntries(opts).then(response => setPosts(response.items));
-	}, match);
-  return posts;
+    client.getEntries(opts).then(response => {
+      console.log(posts);
+      setPosts(response.items);
+    });
+	}, topic);
+  return {posts};
 }
 
-export default useFetchContent;
+export default useFetchArticles;

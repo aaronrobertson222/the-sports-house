@@ -6,11 +6,6 @@
 
 .published-line {
 	height: 32px;
-}
-
-.published-line-item {
-	line-height: 32px;
-
 	:not(:first-child):before {
 		border-left: 1px solid;
 		content: "";
@@ -18,7 +13,10 @@
 		height: 1.1rem;
 		width: 2px;
 	}
+}
 
+.published-line-item {
+	line-height: 32px;
 }
 .published-line-item:not(:first-child):before {
 	border-left: 1px solid;

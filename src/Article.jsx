@@ -1,5 +1,6 @@
 import React from 'react';
-import useFetchContent from './useFetchContent'
+import Helmet from 'react-helmet';
+import useFetchContent from './apiHelpers/useFetchArticles';
 
 import ArticleHeader from './article/ArticleHeader';
 import ArticleContent from './article/ArticleContent';
@@ -19,6 +20,7 @@ const Article = ({ match }) => {
 		<div className="column is-8 is-offset-2">
 			{article ?
 				<div>
+					<Helmet title={article.fields.title} />
 					<ArticleHeader
 						articleTitle={article.fields.title}
 						category={article.fields.topic.fields.name}

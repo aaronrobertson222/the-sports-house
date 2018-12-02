@@ -3,6 +3,11 @@
 
 $navbar-height: 5rem;
 $navbar-item-img-max-height: 4rem;
+$column-gap: .25rem;
+$gap: 100px;
+$navbar-item-hover-background-color: $grey-dark;
+
+$footer-padding: 2rem 1.5rem 2rem;
 
 @import '~bulma/bulma';
 @import '~bulma-extensions/dist/css/bulma-extensions.sass';

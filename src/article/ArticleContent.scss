@@ -1,8 +1,8 @@
 .article-body {
   p {
     padding: 20px 0;
-    font-size: 1.25rem;
-		line-height: 2rem;
+    font-size: 20px;
+		line-height: 28px;
 		white-space: pre-wrap;
   }
 
@@ -22,5 +22,14 @@
 
 	#Heading-3 {
 		font-size: 1rem;
+	}
+
+	blockquote {
+		width: 75%;
+		margin: auto;
+	}
+	blockquote > p::before,
+	blockquote > p::after {
+		content: '"'
 	}
 }

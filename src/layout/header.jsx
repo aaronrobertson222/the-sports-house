@@ -14,6 +14,7 @@ class Header extends Component {
 	}
 
 	render() {
+		const links = ['NFL', 'CFB', 'NBA', 'CBB', 'MLB'];
 		return (
 			<nav
 				className='navbar is-light'
@@ -36,24 +37,11 @@ class Header extends Component {
 					</div>
 					<div className={this.state.isActive ? 'navbar-menu is-active' : 'navbar-menu'}>
 						<div className="navbar-start">
-							<Link className="navbar-item" to="/topic/cbb">
-								<span>NCAAB</span>
-							</Link>
-							<Link className="navbar-item" to="/topic/cfb">
-								<span>CFB</span>
-							</Link>
-							<Link className="navbar-item" to="/topic/nba">
-								<span>NBA</span>
-							</Link>
-							<Link className="navbar-item" to="/topic/nfl">
-								<span>NFL</span>
-							</Link>
-							<Link className="navbar-item" to="/topic/mlb">
-								<span>MLB</span>
-							</Link>
-							<Link className="navbar-item" to="/topic/other">
-								<span>Other</span>
-							</Link>
+							{links.map(link => (
+								<Link className="navbar-item has-text-weight-bold" to={`/topic/${link}`}>
+									<span>{link}</span>
+								</Link>
+							))}
 						</div>
 					</div>
 				</div>

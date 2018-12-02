@@ -1,0 +1,57 @@
+@import "~bulma/sass/utilities/initial-variables";
+
+
+.featured-container {
+	margin-bottom: 100px;
+}
+
+.item-container {
+	box-sizing: border-box;
+	height: 550px;
+}
+.featured-item {
+	background-position: center;
+	background-size: cover;
+	height: 275px;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.info {
+	padding: 1.5rem;
+	position: absolute;
+	bottom: 0;
+	color: white;
+	width: 100%;
+	h1 {
+		color: white;
+		margin-bottom: 5px;
+	}
+}
+
+.item-title {
+	margin-bottom: 5px;
+}
+
+.published-line {
+	font-size: 1rem;
+
+	:first-child:before {
+		content: " "
+	}
+	:not(:first-child):before {
+		border-left: 1px solid;
+		content: "";
+		margin: .4rem;
+		height: 1.1rem;
+		width: 2px;
+	}
+}
+
+
+@media screen and (min-width: $desktop) {
+	.item-image {
+		max-height: 275px;
+		width: 100%;
+	}
+}
