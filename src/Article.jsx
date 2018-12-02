@@ -1,19 +1,24 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Helmet from 'react-helmet';
-import useFetchArticles from './apiHelpers/useFetchArticles';
+import client from './apiHelpers/contentfulClient';
 
 import ArticleHeader from './article/ArticleHeader';
 import ArticleContent from './article/ArticleContent';
 
 
 const Article = ({ match }) => {
-	const articleArray = useFetchArticles({
-		content_type: 'article',
-		'fields.slug': match.params.slug,
-		limit: 1
-	}, [match]);
+	const [article, setArticle] = useState(null);
 
-	const article = articleArray ? articleArray[0] : null;
+	useEffect(() => {
+		client.getEntries({
+			content_type: 'article',
+			'fields.slug': match.params.slug,
+			limit: 1,
+		}).then(response => {
+			console.log(response);
+			setArticle(response.items[0]);
+		});
+	}, [match.params.slug]);
 
 	return (
 		<div className="column is-8 is-offset-2">

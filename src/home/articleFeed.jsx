@@ -15,9 +15,9 @@ const ArticleFeed = ({ topic }) => {
 	};
 
 	// if topic prop is specified add topic fields to options for api request
-	if (topic !== null && topic !== undefined) {
+	if (topic) {
 		opts['fields.topic.sys.contentType.sys.id'] = 'topic';
-		opts['fields.topic.fields.name.fields.topic.fields.name.fields.topic.fields.name'] = `${topic.toUppercase}`;
+		opts['fields.topic.fields.name'] = `${topic.toUpperCase()}`;
 	}
 
 	useEffect(() => {
@@ -29,7 +29,7 @@ const ArticleFeed = ({ topic }) => {
 
 	return (
 		loading ?
-			<p>loading..</p>
+			<div className="lds-dual-ring"></div>
 			:
 			<Fragment>
 				{
