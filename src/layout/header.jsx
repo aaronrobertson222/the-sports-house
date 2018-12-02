@@ -38,7 +38,7 @@ class Header extends Component {
 					<div className={this.state.isActive ? 'navbar-menu is-active' : 'navbar-menu'}>
 						<div className="navbar-start">
 							{links.map(link => (
-								<Link className="navbar-item has-text-weight-bold" to={`/topic/${link}`}>
+								<Link className="navbar-item has-text-weight-bold" to={`/topic/${link}`} key={link}>
 									<span>{link}</span>
 								</Link>
 							))}

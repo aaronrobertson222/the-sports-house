@@ -11,7 +11,6 @@ function useFetchArticles(opts, topic = []) {
 
   useEffect(() => {
     client.getEntries(opts).then(response => {
-      console.log(posts);
       setPosts(response.items);
     });
 	}, topic);

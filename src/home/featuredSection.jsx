@@ -23,7 +23,7 @@ const FeaturedSection = () => {
 						<div style={{ position: 'relative', height: '550px', border: '1px solid white' }}>
 							<figure>
 								<div style={{
-									'background-image': `linear-gradient(
+									backgroundImage: `linear-gradient(
 										to bottom,
 										rgba(0, 0, 0, 0),
 										rgba(0, 0, 0, 0.7)
@@ -64,7 +64,7 @@ const FeaturedSection = () => {
 							<div className="featured-item">
 								<figure className="item-image">
 									<div style={{
-										'background-image': `linear-gradient(
+										backgroundImage: `linear-gradient(
 										to bottom,
 										rgba(0, 0, 0, 0),
 										rgba(0, 0, 0, 0.7)
@@ -101,7 +101,7 @@ const FeaturedSection = () => {
 							<div className="featured-item">
 								<figure className="item-image">
 									<div style={{
-										'background-image': `linear-gradient(
+										backgroundImage: `linear-gradient(
 										to bottom,
 										rgba(0, 0, 0, 0),
 										rgba(0, 0, 0, 0.7)
