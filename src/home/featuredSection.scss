@@ -1,20 +1,11 @@
 @import "~bulma/sass/utilities/initial-variables";
 
-
-.featured-container {
-	margin-bottom: 100px;
-}
-
-.item-container {
-	box-sizing: border-box;
-	height: 550px;
-}
 .featured-item {
-	background-position: center;
-	background-size: cover;
-	height: 275px;
-	box-sizing: border-box;
 	position: relative;
+	height: 300px;
+	width: 100%;
+	max-width: 100%;
+	margin-bottom: 10px;
 }
 
 .info {
@@ -23,14 +14,14 @@
 	bottom: 0;
 	color: white;
 	width: 100%;
-	h1 {
-		color: white;
-		margin-bottom: 5px;
-	}
 }
 
-.item-title {
-	margin-bottom: 5px;
+.title {
+	margin-bottom: 1rem;
+	white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width:100%;
 }
 
 .published-line {
@@ -53,5 +44,42 @@
 	.item-image {
 		max-height: 275px;
 		width: 100%;
+	}
+
+	.featured-item {
+		height: 500px;
+		display: inline-block;
+		box-sizing: border-box;
+		padding: 1px;
+
+		:hover {
+			scale: 0.8;
+		}
+	}
+
+	.featured-item:first-child:nth-last-child(1) {
+		width: 100%;
+	}
+	
+	div.featured-item:first-child:nth-last-child(2),
+	div.featured-item:first-child:nth-last-child(2) ~ div.featured-item {
+		width: 50%;
+	}
+
+	div.featured-item:first-child:nth-last-child(3) {
+		width: 66.66%;
+		height: 500px;
+	}
+
+	div.featured-item:nth-child(2):nth-last-child(2),
+	div.featured-item:nth-child(3):nth-last-child(1) {
+		width: 33.33%;
+		height: 250px;
+	}
+
+	div.featured-item:nth-child(2):nth-last-child(2) {
+		position: absolute;
+		top: 0;
+		right: 0;
 	}
 }

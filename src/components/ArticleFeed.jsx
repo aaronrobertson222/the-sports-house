@@ -3,7 +3,7 @@ import client from '../apiHelpers/contentfulClient';
 
 import ArticleItem from './ArticleItem';
 
-const ArticleFeed = ({ topic }) => {
+const ArticleFeed = ({ topic, noFeatured }) => {
 	const [loading, setLoading] = useState(true);
 	const [articles, setArticles] = useState(null);
 
@@ -18,6 +18,11 @@ const ArticleFeed = ({ topic }) => {
 	if (topic) {
 		opts['fields.topic.sys.contentType.sys.id'] = 'topic';
 		opts['fields.topic.fields.name'] = `${topic.toUpperCase()}`;
+	}
+
+	// if noFeatured prop is true add option to exclude featured posts in response
+	if (noFeatured) {
+		opts['fields.featured[nin]'] = true;
 	}
 
 	useEffect(() => {

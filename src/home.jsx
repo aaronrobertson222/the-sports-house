@@ -3,7 +3,7 @@ import Helmet from 'react-helmet';
 import { Timeline } from 'react-twitter-widgets';
 import './home.scss'
 
-import ArticleFeed from './home/ArticleFeed';
+import ArticleFeed from './components/ArticleFeed';
 import FeaturedSection from './home/featuredSection';
 
 const Home = ({ match }) => {
@@ -15,7 +15,7 @@ const Home = ({ match }) => {
 			<div className="columns">
 				<div className="column is-two-thirds">
 					<h2 className="title is-4 is-uppercase latest-header">Latest</h2>
-					<ArticleFeed />
+					<ArticleFeed noFeatured />
 				</div>
 				<div className="column is-one-third twitter-tl">
 					<Timeline

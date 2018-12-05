@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Helmet from 'react-helmet';
 import client from './apiHelpers/contentfulClient';
 import TopicHero from './topic/topicHero';
-import ArticleFeed from './home/ArticleFeed';
+import ArticleFeed from './components/ArticleFeed';
 
 
 const Topic = ({ match }) => {
