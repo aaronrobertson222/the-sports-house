@@ -35,7 +35,7 @@ const FeaturedSection = () => {
 									maxWidth: '100%'
 								}}>
 									<div className="info">
-										<h1 className="is-spaced has-text-white item-title title">{article.fields.title}</h1>
+										<h1 className="has-text-white item-title title">{article.fields.title}</h1>
 										<p className="subtitle has-text-white published-line">
 											By
 			 								<span className="published-line-item">
@@ -53,7 +53,19 @@ const FeaturedSection = () => {
 				}
 			</div>)
 			:
-			'hello'
+			(
+				<div className="featured-section">
+					<div className="featured-item">
+						<div className="loading"></div>
+					</div>
+					<div className="featured-item">
+						<div className="loading"></div>
+					</div>
+					<div className="featured-item">
+						<div className="loading"></div>
+					</div>
+				</div>
+			)
 	);
 }
 
