@@ -4,6 +4,7 @@ import client from './apiHelpers/contentfulClient';
 
 import ArticleHeader from './article/ArticleHeader';
 import ArticleContent from './article/ArticleContent';
+import ArticleFooter from './article/ArticleFooter';
 
 
 const Article = ({ match }) => {
@@ -33,6 +34,7 @@ const Article = ({ match }) => {
 						image={article.fields.preview.fields.file.url}
 					/>
 					<ArticleContent content={article.fields.content} />
+					<ArticleFooter />
 				</div>
 				: 'hello'}
 		</div>

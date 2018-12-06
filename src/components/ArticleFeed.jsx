@@ -29,25 +29,30 @@ const ArticleFeed = ({ topic, noFeatured }) => {
 		client.getEntries(opts).then(response => {
 			setArticles(response.items);
 			setLoading(false);
+			console.log(articles);
 		});
 	}, [topic]);
 
+
+
 	return (
 		loading ?
-			<div className="lds-dual-ring"></div>
+			<div className="loading">
+			</div>
 			:
-			<Fragment>
-				{
-					articles ?
+			articles === null || articles === undefined ?
+				<h2 className="has-text-weight-bold has-text-centered is-size-5">There's nothing here yet...</h2>
+				:
+				<Fragment>
+					{
 						articles.map((article => (
 							<ArticleItem
 								{...article.fields}
-								key={article.fields.slug} />
+								key={article.fields.slug}
+							/>
 						)))
-						:
-						<p>Kevin really still hasn't written an article</p>
-				}
-			</Fragment>
+					}
+				</Fragment>
 	);
 }
 
