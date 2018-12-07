@@ -3,6 +3,8 @@ import client from '../apiHelpers/contentfulClient';
 
 import ArticleItem from './ArticleItem';
 
+import './ArticleFeed.scss';
+
 const ArticleFeed = ({ topic, noFeatured }) => {
 	const [loading, setLoading] = useState(true);
 	const [articles, setArticles] = useState(null);
@@ -37,8 +39,9 @@ const ArticleFeed = ({ topic, noFeatured }) => {
 
 	return (
 		loading ?
-			<div className="loading">
-			</div>
+			<Fragment>
+				<div className="article-feed-loading" />
+			</Fragment>
 			:
 			articles === null || articles === undefined ?
 				<h2 className="has-text-weight-bold has-text-centered is-size-5">There's nothing here yet...</h2>

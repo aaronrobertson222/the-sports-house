@@ -28,7 +28,7 @@ const Footer = () => (
 			<figure style={{ width: '100px', height: 'auto', margin: '10px auto' }}>
 				<img src={require('../assets/images/main_logo.png')} alt="" style={{ width: '100px' }} />
 			</figure>
-			<p>Site Development By Ron.</p>
+			<p>Site Development By <a href="https://github.com/aaronr5">Ron.</a></p>
 		</div>
 	</footer >
 );

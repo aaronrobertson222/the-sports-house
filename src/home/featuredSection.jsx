@@ -26,7 +26,7 @@ const FeaturedSection = () => {
 									backgroundImage: `linear-gradient(
 										to bottom,
 										rgba(0, 0, 0, 0),
-										rgba(0, 0, 0, 0.9)
+										rgba(0, 0, 0, 0.8)
 									),
 									url(${article.fields.preview.fields.file.url})`,
 									height: '100%',

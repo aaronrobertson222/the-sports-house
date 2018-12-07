@@ -1,0 +1,78 @@
+@import "~bulma/sass/utilities/initial-variables";
+
+$article-image-height: 225px;
+$article-image-mobile-height: 112.5px;
+$article-image-width: 300px;
+$article-image-mobile-width: 150px;
+$article-image-skeleton: linear-gradient(white $article-image-height, transparent 0);
+$article-title-height: 2rem;
+$article-title-width: 50%;
+$aritcle-title-skeleton: linear-gradient(white $article-title-height, transparent 0);
+$article-subtitle-height: 1rem;
+$article-subtitle-width: 50%;
+$article-subtitle-skeleton: linear-gradient(white $article-title-height, transparent 0);
+$article-height: 242px;
+$article-mobile-height: 129.5px;
+$article-width: 100%;
+$article-skeleton: linear-gradient(#e0e0e0 $article-height, transparent 0);
+
+.article-feed-loading {
+	height: $article-height;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-image: 
+	linear-gradient(
+    90deg, 
+   	rgba(#e0e0e0, 0) 0, 
+    rgba(#e0e0e0, .8) 50%, 
+    rgba(#e0e0e0, 0) 100%
+  ), 
+	$article-image-skeleton,
+	$aritcle-title-skeleton,
+	$article-subtitle-skeleton,
+	$article-skeleton;
+
+	background-size: 
+		200px 300px,
+		$article-image-width $article-image-height,
+		$article-title-width $article-title-height,
+		$article-subtitle-width $article-subtitle-height,
+		$article-width $article-height;
+	background-position: -150% 0, 8.5px 8.5px, 330px 8.5px, 330px 50px, 0 0;
+	animation: articleloading 1.5s infinite;
+}
+
+@keyframes articleloading {
+	to {
+		background-position:
+			350% 0,
+			8.5px 8.5px,
+			330px 8.5px,
+			330px 50px,
+			0 0		
+	}
+}
+
+
+@media screen and (max-width: $desktop) {
+	.article-feed-loading {
+		height: $article-mobile-height;
+		background-position: -150% 0, 8.5px 8.5px, 175px 8.5px, 175px 50px, 0 0;
+		background-size: 
+		200px 100%,
+		$article-image-mobile-width $article-image-mobile-height,
+		$article-title-width $article-title-height,
+		$article-subtitle-width $article-subtitle-height,
+		$article-width $article-mobile-height;
+	}
+	@keyframes articleloading {
+		to {
+			background-position:
+				350% 0,
+				8.5px 8.5px,
+				175px 8.5px,
+				175px 50px,
+				0 0		
+		}
+	}
+}

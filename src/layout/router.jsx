@@ -9,7 +9,7 @@ import NoMatch from '../noMatch';
 const Router = () => (
 	<Switch>
 		<Route exact path="/" component={Home} />
-		<Route path="/topic/:topic(CFB|CBB|NBA|NFL|MLB)" component={Topic} />
+		<Route path="/topic/:topic(CFB|CBB|NBA|NFL|MLB|Other)" component={Topic} />
 		<Route path="/article/:slug" component={Article} />
 		<Route component={NoMatch} />
 	</Switch>
