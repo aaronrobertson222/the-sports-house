@@ -29,13 +29,11 @@ const ArticleFeed = ({ topic, noFeatured }) => {
 
 	useEffect(() => {
 		client.getEntries(opts).then(response => {
-			setArticles(response.items);
+			if (response.total > 0) setArticles(response.items);
 			setLoading(false);
 			console.log(articles);
 		});
 	}, [topic]);
-
-
 
 	return (
 		loading ?
@@ -43,7 +41,7 @@ const ArticleFeed = ({ topic, noFeatured }) => {
 				<div className="article-feed-loading" />
 			</Fragment>
 			:
-			articles === null || articles === undefined ?
+			articles === null ?
 				<h2 className="has-text-weight-bold has-text-centered is-size-5">There's nothing here yet...</h2>
 				:
 				<Fragment>
