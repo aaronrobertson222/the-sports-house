@@ -21,7 +21,7 @@ const FeaturedSection = () => {
 				{
 					posts.map((article, i) => (
 						<div className="featured-item" key={article.fields.slug}>
-							<Link to={`/article/${article.fields.slug}`}>
+							<Link to={`${process.env.PUBLIC_URL}/article/${article.fields.slug}`}>
 								<div style={{
 									backgroundImage: `linear-gradient(
 										to bottom,

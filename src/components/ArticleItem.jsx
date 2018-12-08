@@ -8,13 +8,13 @@ const Article = ({ preview, title, author, date, slug, topic }) => (
 	<article className="media">
 		<figure className="media-left">
 			<p className="thumbnail">
-				<Link to={`/article/${slug}`}>
+				<Link to={`${process.env.PUBLIC_URL}/article/${slug}`}>
 					<img src={preview.fields.file.url} alt={title} className="thumbnail-img" />
 				</Link>
 			</p>
 		</figure>
 		<div className="media-content">
-			<Link to={`/article/${slug}`}>
+			<Link to={`${process.env.PUBLIC_URL}/article/${slug}`}>
 				<h1 className="title is-spaced title-link">{title}</h1>
 			</Link>
 

@@ -23,7 +23,7 @@ class Header extends Component {
 			>
 				<div className="container is-widescreen">
 					<div className="navbar-brand">
-						<Link className="navbar-item" to="/">
+						<Link className="navbar-item" to={`${process.env.PUBLIC_URL}/`}>
 							<img
 								src={require('../assets/images/main_logo.png')}
 								alt="The Sports House"
@@ -38,7 +38,7 @@ class Header extends Component {
 					<div className={this.state.isActive ? 'navbar-menu is-active' : 'navbar-menu'}>
 						<div className="navbar-start">
 							{links.map(link => (
-								<Link className="navbar-item has-text-weight-bold" to={`/topic/${link}`} key={link}>
+								<Link className="navbar-item has-text-weight-bold" to={`${process.env.PUBLIC_URL}/topic/${link}`} key={link}>
 									<span>{link}</span>
 								</Link>
 							))}
