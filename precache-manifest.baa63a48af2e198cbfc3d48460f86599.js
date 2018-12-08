@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "cb389f1a6ed6effd285e",
+    "revision": "a1b98a1a3b7b3a2fbd19",
     "url": "/the-sports-house/static/css/main.35c8a683.chunk.css"
   },
   {
-    "revision": "cb389f1a6ed6effd285e",
-    "url": "/the-sports-house/static/js/main.cb389f1a.chunk.js"
+    "revision": "a1b98a1a3b7b3a2fbd19",
+    "url": "/the-sports-house/static/js/main.a1b98a1a.chunk.js"
   },
   {
     "revision": "dd3adf6e189dacd33a78",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/the-sports-house/static/media/main_logo.74eeb79c.png"
   },
   {
-    "revision": "4e2ee653946309bf1baad18e6ba8cd54",
+    "revision": "bb8a3dbcd4986a7f7824aa6a51b7a91e",
     "url": "/the-sports-house/index.html"
   }
 ];

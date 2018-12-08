@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/the-sports-house/precache-manifest.b85930e6aef485c52ec36bd468b7d198.js"
+  "/the-sports-house/precache-manifest.baa63a48af2e198cbfc3d48460f86599.js"
 );
 
 workbox.clientsClaim();

@@ -1,7 +1,7 @@
 {
   "main.css": "/the-sports-house/static/css/main.35c8a683.chunk.css",
-  "main.js": "/the-sports-house/static/js/main.cb389f1a.chunk.js",
-  "main.js.map": "/the-sports-house/static/js/main.cb389f1a.chunk.js.map",
+  "main.js": "/the-sports-house/static/js/main.a1b98a1a.chunk.js",
+  "main.js.map": "/the-sports-house/static/js/main.a1b98a1a.chunk.js.map",
   "static/js/1.dd3adf6e.chunk.js": "/the-sports-house/static/js/1.dd3adf6e.chunk.js",
   "static/js/1.dd3adf6e.chunk.js.map": "/the-sports-house/static/js/1.dd3adf6e.chunk.js.map",
   "runtime~main.js": "/the-sports-house/static/js/runtime~main.39ec02e1.js",
@@ -9,6 +9,6 @@
   "static/media/main_logo.png": "/the-sports-house/static/media/main_logo.74eeb79c.png",
   "static/css/main.35c8a683.chunk.css.map": "/the-sports-house/static/css/main.35c8a683.chunk.css.map",
   "index.html": "/the-sports-house/index.html",
-  "precache-manifest.b85930e6aef485c52ec36bd468b7d198.js": "/the-sports-house/precache-manifest.b85930e6aef485c52ec36bd468b7d198.js",
+  "precache-manifest.baa63a48af2e198cbfc3d48460f86599.js": "/the-sports-house/precache-manifest.baa63a48af2e198cbfc3d48460f86599.js",
   "service-worker.js": "/the-sports-house/service-worker.js"
 }
