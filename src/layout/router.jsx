@@ -8,9 +8,9 @@ import NoMatch from '../noMatch';
 
 const Router = () => (
 	<Switch>
-		<Route exact path="/" component={Home} />
-		<Route path="/topic/:topic(CFB|CBB|NBA|NFL|MLB|Other)" component={Topic} />
-		<Route path="/article/:slug" component={Article} />
+		<Route exact path={process.env.PUBLIC_URL + '/'} component={Home} />
+		<Route path={process.env.PUBLIC_URL + '/topic/:topic(CFB|CBB|NBA|NFL|MLB|Other)'} component={Topic} />
+		<Route path={process.env.PUBLIC_URL + '/article/:slug'} component={Article} />
 		<Route component={NoMatch} />
 	</Switch>
 );

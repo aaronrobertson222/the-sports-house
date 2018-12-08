@@ -1,11 +1,13 @@
 {
   "name": "the-sports-house",
   "version": "0.1.0",
+  "homepage": "https://aaronr5.github.io/the-sports-house/",
   "private": true,
   "dependencies": {
     "bulma": "^0.7.2",
     "bulma-extensions": "^3.0.0",
     "contentful": "^7.0.5",
+    "gh-pages": "^2.0.1",
     "marked": "^0.5.1",
     "moment": "^2.22.2",
     "node-sass": "^4.10.0",
@@ -21,6 +23,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
