@@ -16,7 +16,6 @@ const Article = ({ match }) => {
 			'fields.slug': match.params.slug,
 			limit: 1,
 		}).then(response => {
-			console.log(response);
 			setArticle(response.items[0]);
 		});
 	}, [match.params.slug]);

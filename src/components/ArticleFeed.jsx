@@ -31,9 +31,8 @@ const ArticleFeed = ({ topic, noFeatured }) => {
 		client.getEntries(opts).then(response => {
 			if (response.total > 0) setArticles(response.items);
 			setLoading(false);
-			console.log(articles);
 		});
-	}, [topic]);
+	}, [topic, opts]);
 
 	return (
 		loading ?
