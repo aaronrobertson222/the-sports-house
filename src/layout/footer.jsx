@@ -5,6 +5,9 @@ import './footer.scss';
 const Footer = () => (
 	<footer className="footer" sytle={{ padding: '2rem 1.5rem 2rem' }}>
 		<div className="content has-text-centered">
+			<figure style={{ width: '100px', height: 'auto', margin: '10px auto' }}>
+				<img src={require('../assets/images/main_logo.png')} alt="" style={{ width: '100px' }} />
+			</figure>
 			<div className="socials" style={{ padding: '20px 0' }}>
 				<p className="has-text-weight-semibold is-uppercase">
 					Follow Us.
@@ -25,10 +28,7 @@ const Footer = () => (
 					</a>
 				</span>
 			</div>
-			<figure style={{ width: '100px', height: 'auto', margin: '10px auto' }}>
-				<img src={require('../assets/images/main_logo.png')} alt="" style={{ width: '100px' }} />
-			</figure>
-			<p>Site Development By <a href="https://github.com/aaronr5">Ron.</a></p>
+			<p>Site Development By <a href="https://github.com/aaronr5" target="_blank" rel="noopener noreferrer" className="dev-link">Ron</a>.</p>
 		</div>
 	</footer >
 );
