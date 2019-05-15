@@ -1,7 +1,7 @@
 {
   "name": "the-sports-house",
   "version": "0.1.0",
-  "homepage": "/",
+  "homepage": "https://aaronr5.github.io/the-sports-house/",
   "private": true,
   "dependencies": {
     "bulma": "^0.7.4",
