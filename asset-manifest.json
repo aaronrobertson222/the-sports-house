@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.2cdbb1dd.chunk.css",
-    "main.js": "/static/js/main.0ef08b2f.chunk.js",
-    "main.js.map": "/static/js/main.0ef08b2f.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-    "static/js/2.fa047197.chunk.js": "/static/js/2.fa047197.chunk.js",
-    "static/js/2.fa047197.chunk.js.map": "/static/js/2.fa047197.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.b952cd3b4f844acda81a28edb20e9dd9.js": "/precache-manifest.b952cd3b4f844acda81a28edb20e9dd9.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.2cdbb1dd.chunk.css.map": "/static/css/main.2cdbb1dd.chunk.css.map",
-    "static/media/main_logo.png": "/static/media/main_logo.74eeb79c.png"
+    "main.css": "/the-sports-house/static/css/main.2cdbb1dd.chunk.css",
+    "main.js": "/the-sports-house/static/js/main.2668ee51.chunk.js",
+    "main.js.map": "/the-sports-house/static/js/main.2668ee51.chunk.js.map",
+    "runtime~main.js": "/the-sports-house/static/js/runtime~main.46e8b681.js",
+    "runtime~main.js.map": "/the-sports-house/static/js/runtime~main.46e8b681.js.map",
+    "static/js/2.520c0b49.chunk.js": "/the-sports-house/static/js/2.520c0b49.chunk.js",
+    "static/js/2.520c0b49.chunk.js.map": "/the-sports-house/static/js/2.520c0b49.chunk.js.map",
+    "index.html": "/the-sports-house/index.html",
+    "precache-manifest.fcdbd13751ae30f8a12c3fa7b8021f31.js": "/the-sports-house/precache-manifest.fcdbd13751ae30f8a12c3fa7b8021f31.js",
+    "service-worker.js": "/the-sports-house/service-worker.js",
+    "static/css/main.2cdbb1dd.chunk.css.map": "/the-sports-house/static/css/main.2cdbb1dd.chunk.css.map",
+    "static/media/main_logo.png": "/the-sports-house/static/media/main_logo.74eeb79c.png"
   }
 }
