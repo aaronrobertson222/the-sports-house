@@ -1,6 +1,7 @@
 # The Sports House
-
 *Site no longer maintained/run by client was given permission to open source code for portfolio.*
+
+![The sports house homepage](https://i.imgur.com/LUzgAPU.png)
 
 Sports news/blog site built for client.
 
